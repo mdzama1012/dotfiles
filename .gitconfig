@@ -1,0 +1,7 @@
+[user]
+	name = Mohd Zama
+	email = zama9170@gmail.com
+[color]
+	ui = auto
+[alias]
+	tree = log --oneline --graph --decorate --all

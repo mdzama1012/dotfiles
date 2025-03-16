@@ -1,0 +1,26 @@
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+
+configuration {
+	display-window: "Windows";
+	display-run: "Run";
+	display-drun: "Applications";
+
+	drun-display-format: "{icon} {name}";
+
+	font: "ComicShannsMono Nerd Font Medium 14";
+	modi: "run,drun";
+	show-icons: true;
+	icon-theme: "Papirus";
+}
+
+element {
+   padding: 6 12;
+}
+
+element-icon {
+   size: 36px;
+}
+
+listview {
+   lines: 8;
+}

@@ -1,0 +1,33 @@
+# Ghostty configuration file
+
+# Use Ctrl + , to reload the configuration file.
+
+# Font Settings
+font-size = 12
+# font-family = Terminess Nerd Font Mono
+font-family = Hack Nerd Font Mono
+# font-family = ShureTechMono Nerd Font
+# font-family = ComicShannsMono Nerd Font
+
+# Background
+background-opacity = 0.9
+
+# Themes
+# theme = GruvboxDarkHard
+# theme = IC_Orange_PPL
+theme = Monokai Soda
+# theme = Monokai Remastered
+
+# Mouse Behavior
+mouse-hide-while-typing = true
+
+# Cursor
+cursor-style = bar
+adjust-cursor-thickness = 2
+
+# Specify the initial window size in grid cells:
+window-width = 80
+window-height = 30
+
+bold-is-bright = true
+window-inherit-font-size = false
