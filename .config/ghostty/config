@@ -3,20 +3,17 @@
 # Use Ctrl + , to reload the configuration file.
 
 # Font Settings
-font-size = 12
-# font-family = Terminess Nerd Font Mono
-font-family = Hack Nerd Font Mono
-# font-family = ShureTechMono Nerd Font
-# font-family = ComicShannsMono Nerd Font
+font-size = 14
+# font-family = Hack Nerd Font Mono
+font-family = ShureTechMono Nerd Font Mono
 
 # Background
-background-opacity = 0.9
+# background-opacity = 0.9
 
 # Themes
 # theme = GruvboxDarkHard
 # theme = IC_Orange_PPL
 theme = Monokai Soda
-# theme = Monokai Remastered
 
 # Mouse Behavior
 mouse-hide-while-typing = true

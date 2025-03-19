@@ -1,24 +1,31 @@
-@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
 
 configuration {
-	display-window: "Windows";
-	display-run: "Run";
-	display-drun: "Applications";
-
-	drun-display-format: "{icon} {name}";
+	display-window: "🪟 Windows";
+	display-run: "🏃🏼‍➡️ Run";
+	display-drun: "🖥️ Applications";
 
 	font: "ComicShannsMono Nerd Font Medium 14";
 	modi: "run,drun";
+
 	show-icons: true;
 	icon-theme: "Papirus";
 }
 
+prompt {
+	padding: 0 12;
+}
+
 element {
-   padding: 6 12;
+	padding: 0 12;
 }
 
 element-icon {
-   size: 36px;
+   size: 40px;
+}
+
+element-text {
+	padding: 12;
 }
 
 listview {
