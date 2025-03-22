@@ -1,12 +1,12 @@
-@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+@theme "/usr/share/rofi/themes/Monokai.rasi"
 
 configuration {
 	display-window: "🪟 Windows";
 	display-run: "🏃🏼‍➡️ Run";
 	display-drun: "🖥️ Applications";
 
-	font: "ComicShannsMono Nerd Font Medium 14";
-	modi: "run,drun";
+	font: "Hack Nerd Font Mono Medium 12";
+	modi: "window,run,drun";
 
 	show-icons: true;
 	icon-theme: "Papirus";
@@ -17,7 +17,7 @@ prompt {
 }
 
 element {
-	padding: 0 12;
+	padding: 6 12;
 }
 
 element-icon {

@@ -3,24 +3,23 @@
 # Use Ctrl + , to reload the configuration file.
 
 # Font Settings
-font-size = 14
-# font-family = Hack Nerd Font Mono
-font-family = ShureTechMono Nerd Font Mono
+font-size =
+font-family = Hack Nerd Font Mono
 
 # Background
-# background-opacity = 0.9
+background-opacity =
 
 # Themes
-# theme = GruvboxDarkHard
+theme = GruvboxDarkHard
 # theme = IC_Orange_PPL
-theme = Monokai Soda
+# theme = Monokai Soda
 
 # Mouse Behavior
 mouse-hide-while-typing = true
 
 # Cursor
 cursor-style = bar
-adjust-cursor-thickness = 2
+adjust-cursor-thickness = 3
 
 # Specify the initial window size in grid cells:
 window-width = 80
