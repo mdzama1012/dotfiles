@@ -11,6 +11,9 @@
 
 set $mod Mod4
 
+# Start picom (X11 compositor)
+exec --no-startup-id picom
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -154,6 +157,9 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status --config ~/.i3status.conf
 }
+
+# Gaps between windows
+# gaps inner 8
 
 # set volume to 0 on every startup
 exec amixer set Master 0%
