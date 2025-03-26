@@ -13,7 +13,16 @@ background-opacity = 0.8
 # Themes
 # theme = GruvboxDarkHard
 # theme = IC_Orange_PPL
-theme = Monokai Soda
+# theme = Monokai Soda
+# theme = Monokai Remastered
+# theme = Adventure
+# theme = AtomOneDark
+# theme = ayu
+# theme = Banana Blueberry
+# theme = Blue Matrix
+theme = citruszest
+# theme = CutiePro
+
 
 # Mouse Behavior
 mouse-hide-while-typing = true

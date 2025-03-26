@@ -152,14 +152,17 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
+# start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
         status_command i3status --config ~/.i3status.conf
 }
 
-# Gaps between windows
-# gaps inner 8
+# set inner gaps for all windows
+gaps inner 8
+
+# only show inner gaps if there are multiple windows.
+smart_gaps on
 
 # set volume to 0 on every startup
 exec amixer set Master 0%
