@@ -7,14 +7,14 @@ font-size =
 font-family = JetBrains Mono Nerd Font
 
 # Background
-background-blur = true
-background-opacity = 0.8
+# background-blur = true
+background-opacity = 0.9
 
 # Themes
 # theme = GruvboxDarkHard
 # theme = IC_Orange_PPL
-# theme = Monokai Soda
-theme = Monokai Remastered
+theme = Monokai Soda
+# theme = Monokai Remastered
 # theme = Adventure
 # theme = ayu
 # theme = Banana Blueberry
@@ -22,13 +22,12 @@ theme = Monokai Remastered
 # theme = citruszest
 # theme = CutiePro
 
-
 # Mouse Behavior
 mouse-hide-while-typing = true
 
 # Cursor
 cursor-style = bar
-adjust-cursor-thickness = 3
+adjust-cursor-thickness = 2
 
 # Specify the initial window size in grid cells:
 window-width = 80
