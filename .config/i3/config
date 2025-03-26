@@ -45,6 +45,12 @@ bindsym $mod+s exec rofi -show run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# Screenshots settings
+# take interactive screenshot.
+bindsym Print exec --no-startup-id flameshot gui --path ~/Pictures/Screenshots
+# take a quick full screen screenshot.
+bindsym Shift+Print exec --no-startup-id flameshot full --path ~/Pictures/Screenshots
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
