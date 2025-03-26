@@ -4,7 +4,7 @@
 
 # Font Settings
 font-size =
-font-family = Hack Nerd Font Mono
+font-family = JetBrains Mono Nerd Font
 
 # Background
 background-blur = true
@@ -16,11 +16,10 @@ background-opacity = 0.8
 # theme = Monokai Soda
 # theme = Monokai Remastered
 # theme = Adventure
-# theme = AtomOneDark
 # theme = ayu
-# theme = Banana Blueberry
+theme = Banana Blueberry
 # theme = Blue Matrix
-theme = citruszest
+# theme = citruszest
 # theme = CutiePro
 
 

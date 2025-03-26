@@ -1,7 +1,59 @@
 [user]
 	name = Mohd Zama
 	email = zama9170@gmail.com
+
+[core]
+	# Set your preferred text editor (e.g., vim, code, nano)
+	editor = vim
+	# Use input mode for autocrlf on Unix/macOS; change as needed on Windows
+	autocrlf = input
+	# Global gitignore file to exclude common files
+	excludesfile = ~/.gitignore_global
+
 [color]
 	ui = auto
+
 [alias]
+	# Basic aliases for frequent operations
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	df = diff
+	# Improved log alias with a compact, graphical view
 	tree = log --oneline --graph --decorate --all
+	lg = log --graph --pretty=format:'%C(auto)%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit
+	# Shortcuts for amending and checking the last commit
+	amend = commit --amend
+	last = log -1 HEAD
+	# Unstage changes easily
+	unstage = reset HEAD --
+
+[merge]
+	# Set your preferred merge tool; here, vimdiff is used as an example
+	tool = vimdiff
+	# Prefer fast-forward merges where possible
+	ff = true
+
+[diff]
+	tool = vimdiff
+
+[pull]
+	# Use rebase instead of merge when pulling to keep history linear
+	rebase = true
+
+[rebase]
+	# Automatically squash commits when indicated
+	autosquash = true
+
+[push]
+	# Use the simple push strategy (push the current branch to its upstream branch)
+	default = simple
+
+[credential]
+	# Cache credentials for one hour (3600 seconds)
+	helper = cache --timeout=3600
+
+[rerere]
+	# Enable reuse of recorded conflict resolutions
+	enabled = true

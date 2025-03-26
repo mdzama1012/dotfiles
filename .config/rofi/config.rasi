@@ -13,7 +13,7 @@ configuration {
     display-drun:   "🖥️ Applications";
 
     /* Font settings for clarity and style */
-    font: "Hack Nerd Font Mono Medium 12";
+    font: "JetBrains Mono Nerd Font Medium 12";
 
     /* Modes available in Rofi */
     modi: "window,run,drun";
