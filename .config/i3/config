@@ -14,6 +14,14 @@ set $mod Mod4
 # Start picom (X11 compositor)
 exec --no-startup-id picom
 
+# set inner gaps for all windows
+gaps inner 4
+
+# only show inner gaps if there are multiple windows.
+smart_gaps on
+
+default_border none
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -111,7 +119,7 @@ bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+0 workspace T
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -123,7 +131,7 @@ bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+0 move container to workspace T
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -164,17 +172,11 @@ bar {
         status_command i3status --config ~/.i3status.conf
 }
 
-# set inner gaps for all windows
-gaps inner 4
-
-# only show inner gaps if there are multiple windows.
-smart_gaps on
-
 # set volume to 0 on every startup
 exec amixer set Master 0%
 
+# on every startup set the resolution to be 1600x900 pixels
+exec_always xrandr --output eDP-1 --mode 1600x900 --pos 0x0
+
 # set the wallpaper on every startup
 exec_always nitrogen --restore
-
-# on every startup set the resolution to be 1600x900 pixels
-exec_always xrandr --output eDP-1 --mode 1600x900
