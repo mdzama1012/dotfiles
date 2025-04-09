@@ -11,8 +11,14 @@
 
 set $mod Mod4
 
+# on every startup set the resolution to be 1600x900 pixels
+exec_always xrandr --output eDP-1 --mode 1600x900
+
 # Start picom (X11 compositor)
-exec --no-startup-id picom
+exec --no-startup-id sleep 5 && picom -b
+
+# set the wallpaper on every startup
+exec_always nitrogen --restore
 
 # set inner gaps for all windows
 gaps inner 4
@@ -171,12 +177,3 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status --config ~/.i3status.conf
 }
-
-# set volume to 0 on every startup
-exec amixer set Master 0%
-
-# on every startup set the resolution to be 1600x900 pixels
-exec_always xrandr --output eDP-1 --mode 1600x900 --pos 0x0
-
-# set the wallpaper on every startup
-exec_always nitrogen --restore
