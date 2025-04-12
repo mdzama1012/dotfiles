@@ -12,8 +12,9 @@ background-opacity = 0.8
 
 # Themes
 # theme = GruvboxDarkHard
+theme = IC_Orange_PPL
 # theme = Monokai Soda
-theme = citruszest
+# theme = citruszest
 # theme = CutiePro
 
 # Mouse Behavior

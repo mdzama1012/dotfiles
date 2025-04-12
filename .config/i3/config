@@ -4,21 +4,19 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
-
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
-
 set $mod Mod4
 
 # on every startup set the resolution to be 1600x900 pixels
 exec_always xrandr --output eDP-1 --mode 1600x900
 
-# Start picom (X11 compositor)
-exec --no-startup-id sleep 5 && picom -b
-
 # set the wallpaper on every startup
 exec_always nitrogen --restore
+
+# Start picom (X11 compositor)
+exec --no-startup-id sleep 3 && picom -b
 
 # set inner gaps for all windows
 gaps inner 4
@@ -27,7 +25,6 @@ gaps inner 4
 smart_gaps on
 
 default_border none
-
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
