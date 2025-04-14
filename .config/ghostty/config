@@ -8,13 +8,11 @@ font-family = JetBrains Mono Nerd Font
 
 # Background
 # background-blur = true
-background-opacity = 0.8
+background-opacity = 0.9
 
 # Themes
 # theme = GruvboxDarkHard
-theme = IC_Orange_PPL
-# theme = Monokai Soda
-# theme = citruszest
+theme = Monokai Soda
 # theme = CutiePro
 
 # Mouse Behavior
