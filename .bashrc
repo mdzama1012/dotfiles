@@ -110,16 +110,12 @@ eval "$(starship init bash)"
 
 # some alias definitions.
 # pretty ls (using eza, replacement of ls).
-alias ls='eza --grid --long --header --icons=auto --git --group-directories-first --color=always'
+alias ls='eza --grid --header --icons=auto --git --group-directories-first --color=always'
 alias la='ls --all'
-
-# directory navigation.
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
+alias ll='ls --long'
 
 # tree view using eaz.
-alias tree='ll --tree --ignore-glob=".git"'
+alias tree='la --long --tree --ignore-glob=".git"'
 alias tree2='tree --level=2'
 alias tree3='tree --level=3'
 alias tree4='tree --level=4'
