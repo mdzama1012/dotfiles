@@ -10,10 +10,11 @@ font-family = JetBrains Mono Nerd Font
 # background-blur = true
 background-opacity = 0.9
 
-# Themes
-# theme = GruvboxDarkHard
-theme = Monokai Soda
-# theme = CutiePro
+# Some of my favorite themes
+# theme = GruvboxDark
+theme = Adwaita Dark
+# theme = Arthur
+# theme = Monokai Pro
 
 # Mouse Behavior
 mouse-hide-while-typing = true
@@ -22,10 +23,8 @@ mouse-hide-while-typing = true
 cursor-style = bar
 adjust-cursor-thickness = 2
 
-# Specify the initial window size in grid cells:
-# window-width = 80
-# window-height = 24
-maximize = true
+# maximize the window on startup
+# maximize = true
 
 bold-is-bright = true
 window-inherit-font-size = false
