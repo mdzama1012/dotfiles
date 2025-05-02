@@ -24,7 +24,7 @@ cursor-style = bar
 adjust-cursor-thickness = 2
 
 # maximize the window on startup
-# maximize = true
+maximize = true
 
 bold-is-bright = true
 window-inherit-font-size = false
