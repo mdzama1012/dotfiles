@@ -130,3 +130,6 @@ alias cx='c && x'
 
 # reload shell config.
 alias reload='source ~/.bashrc'
+
+# c++ compiler helper function.
+source ~/.bash-scripts/compile_cpp.sh
