@@ -1,21 +1,20 @@
 compile_cpp() {
-  local src="${1%*.cpp}.cpp"
-  local exe="${src%.cpp}"
-  if [[ ! -f $src ]]; then
-    echo "Usage: cxx_compile foo.cpp   # builds ./foo"
+  if [ $# -ne 1 ]; then
+    echo "Usage: compile_cpp <source.cpp>"
     return 1
   fi
 
-  echo "→ Compiling $src …"
-  g++ -std=c++23 -O2 \
-    -Wall -Wextra -Wpedantic \
-    -fmax-errors=1 \
-    "$src" -o "$exe"
-
-  if [[ $? -eq 0 ]]; then
-    echo "✅ Built ./$(basename "$exe")"
-  else
-    echo "❌ Fix above and retry"
-    return 2
+  local src="$1"
+  if [[ "$src" != *.cpp ]]; then
+    echo "Error: '$src' is not a .cpp file"
+    return 1
   fi
+
+  if [ ! -f "$src" ]; then
+    echo "Error: '$src' does not exist"
+    return 1
+  fi
+
+  local base="${src%.cpp}"
+  g++ -std=c++2b -Wall -Wextra -Wpedantic -Werror -o "$base" "$src"
 }
