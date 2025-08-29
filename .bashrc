@@ -133,3 +133,5 @@ alias reload='source ~/.bashrc'
 
 # c++ compiler helper function.
 source ~/.bash-scripts/compile_cpp.sh
+
+export TERMINAL=wezterm
