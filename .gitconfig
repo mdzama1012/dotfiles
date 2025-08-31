@@ -1,0 +1,23 @@
+[user]
+	name = Mohd Zama
+	email = zama9170@gmail.com
+
+[core]
+	# Set your preferred text editor (e.g., vim, code, nano)
+	editor = code
+	# Use input mode for autocrlf on Unix/macOS; change as needed on Windows
+	autocrlf = input
+	# Global gitignore file to exclude common files
+	excludesfile = ~/.gitignore_global
+
+[color]
+	ui = auto
+
+[alias]
+	# Improved log alias with a compact, graphical view
+	tree = log --oneline --graph --decorate --all
+	# Shortcuts for amending and checking the last commit
+	amend = commit --amend
+	last = log -1 HEAD
+	# Unstage changes easily
+	unstage = reset HEAD --

@@ -1,0 +1,62 @@
+/*******************************************************
+ *               Beautiful Rofi Config               *
+ *  A sleek and modern look using Gruvbox Dark Hard    *
+ *******************************************************/
+
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+
+/* Main configuration: labels, font, mode settings, and icons */
+configuration {
+    /* Display labels for each mode */
+    display-window: "🪟 Windows";
+    display-run:    "🏃🏼‍➡️ Run";
+    display-drun:   "🖥️ Applications";
+
+    /* Font settings for clarity and style */
+    font: "JetBrains Mono Nerd Font Medium 12";
+
+    /* Modes available in Rofi */
+    modi: "window,run,drun";
+
+    /* Enable icons and set the icon theme */
+    show-icons: true;
+    icon-theme: "WhiteSur";
+}
+
+/* Prompt styling: adjust padding for a balanced look */
+prompt {
+    padding: 0 12;
+}
+
+/* Element styling: spacing around each menu entry */
+element {
+    padding: 6 12;
+    /* Optional: Uncomment below to add a subtle border effect */
+    /* border: { width: 1; color: "#3c3836"; radius: 4; }; */
+}
+
+/* Icon styling within menu elements */
+element-icon {
+    size: 40px;
+    /* Optional: adjust padding if desired */
+    /* padding: 4; */
+}
+
+/* Text styling within menu elements */
+element-text {
+    padding: 12;
+    /* Optional: text-align can be set to left, center, or right */
+    /* text-align: left; */
+}
+
+/* List view settings: number of visible lines */
+listview {
+    lines: 8;
+    /* Optional: set fixed height for consistent appearance */
+    /* fixed-height: true; */
+}
+
+/* Additional Customizations:
+ * - You can further tweak colors, margins, or add background effects.
+ * - Explore additional selectors and properties in the Rofi documentation.
+ */
